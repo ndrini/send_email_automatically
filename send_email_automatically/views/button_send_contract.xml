@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+    	<record id="view_account_analytic_send_email_with_contract" model="ir.ui.view">
+            <field name="name">analytic.analytic.account.form.send_contract</field>
+            <field name="model">account.analytic.account</field>
+            <field name="inherit_id" ref="analytic.view_account_analytic_account_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/div" position="inside"> 
+                    <button name="send_email_with_contract" type="object" string="Sent the contract" class="oe_highlight"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
